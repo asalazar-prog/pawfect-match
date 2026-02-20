@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Pawfect Match</string>
+    <string name="lbl_location">Location</string>
+    <string name="tlt_find_your_new_part_one">Find your new</string>
+    <string name="tlt_find_your_new_part_two">best friend</string>
 </resources>

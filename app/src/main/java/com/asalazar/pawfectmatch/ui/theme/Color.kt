@@ -1,11 +1,11 @@
 package com.asalazar.pawfectmatch.ui.theme
 import androidx.compose.ui.graphics.Color
 
-val primaryLight = Color(0xFF7F5700)
+val primaryLight = Color(0xFFF4AF24)
 val onPrimaryLight = Color(0xFFFFFFFF)
 val primaryContainerLight = Color(0xFFF2AF31)
 val onPrimaryContainerLight = Color(0xFF654500)
-val secondaryLight = Color(0xFF2D3228)
+val secondaryLight = Color(0xFF8A7C60)
 val onSecondaryLight = Color(0xFFFFFFFF)
 val secondaryContainerLight = Color(0xFF43483E)
 val onSecondaryContainerLight = Color(0xFFB2B6AA)

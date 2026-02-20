@@ -1,5 +1,6 @@
 package com.asalazar.pawfectmatch.data
 
+import com.asalazar.pawfectmatch.R
 import com.asalazar.pawfectmatch.model.AnimalNature
 import com.asalazar.pawfectmatch.model.Gender
 import com.asalazar.pawfectmatch.model.Pet
@@ -17,7 +18,7 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 36U,
                 nature = listOf(AnimalNature.LOYAL, AnimalNature.ACTIVE),
-                photo = 0 // TODO: Descargar las imagenes y vincularlos con el R.drawable real
+                photo = R.drawable.golden_retriever
             ),
             Pet(
                 id = 2U,
@@ -27,7 +28,7 @@ class PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 2U,
                 nature = listOf(AnimalNature.PLAYFUL, AnimalNature.SOCIAL),
-                photo = 0
+                photo = R.drawable.persian_cat
             ),
             Pet(
                 id = 3U,
@@ -37,7 +38,7 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 60U,
                 nature = listOf(AnimalNature.GUARD, AnimalNature.LOYAL),
-                photo = 0
+                photo = R.drawable.bulldog
             ),
             Pet(
                 id = 4U,
@@ -47,7 +48,7 @@ class PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 12U,
                 nature = listOf(AnimalNature.QUIET, AnimalNature.SHY),
-                photo = 0
+                photo = R.drawable.holland_lop
             ),
             Pet(
                 id = 5U,
@@ -57,7 +58,7 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 24U,
                 nature = listOf(AnimalNature.SMART, AnimalNature.ADVENTUROUS),
-                photo = 0
+                photo = R.drawable.beagle
             ),
             Pet(
                 id = 6U,
@@ -67,7 +68,7 @@ class PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 8U,
                 nature = listOf(AnimalNature.PLAYFUL, AnimalNature.QUIET),
-                photo = 0
+                photo = R.drawable.siamese
             ),
             Pet(
                 id = 7U,
@@ -77,7 +78,7 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 18U,
                 nature = listOf(AnimalNature.SOCIAL, AnimalNature.ADVENTUROUS),
-                photo = 0
+                photo = R.drawable.cockatiel
             ),
             Pet(
                 id = 8U,
@@ -87,7 +88,7 @@ class PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 48U,
                 nature = listOf(AnimalNature.SMART, AnimalNature.FRIENDLY),
-                photo = 0
+                photo = R.drawable.poodle
             ),
             Pet(
                 id = 9U,
@@ -97,7 +98,7 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 14U,
                 nature = listOf(AnimalNature.INDEPENDENT, AnimalNature.CALM),
-                photo = 0
+                photo = R.drawable.maine_coon
             ),
             Pet(
                 id = 10U,
@@ -107,10 +108,12 @@ class PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 10U,
                 nature = listOf(AnimalNature.ACTIVE, AnimalNature.PLAYFUL),
-                photo = 0
+                photo = R.drawable.jack_russell
             )
         )
     }
+
+    fun getUrgentPet(): Pet = getPets().random()
 
     /**
      * TODO
