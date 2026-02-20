@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nature_playful">Playful</string>
+    <string name="nature_guard">Guard</string>
+    <string name="nature_quiet">Quiet</string>
+    <string name="nature_active">Active</string>
+    <string name="nature_loyal">Loyal</string>
+    <string name="nature_smart">Smart</string>
+    <string name="nature_friendly">Friendly</string>
+    <string name="nature_affectionate">Affectionate</string>
+    <string name="nature_independent">Independent</string>
+    <string name="nature_protective">Protective</string>
+    <string name="nature_calm">Calm</string>
+    <string name="nature_social">Social</string>
+    <string name="nature_shy">Shy</string>
+    <string name="nature_adventurous">Adventurous</string>
+</resources>
