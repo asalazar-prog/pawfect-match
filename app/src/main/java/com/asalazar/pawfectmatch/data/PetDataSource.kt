@@ -6,10 +6,12 @@ import com.asalazar.pawfectmatch.model.Gender
 import com.asalazar.pawfectmatch.model.Pet
 import com.asalazar.pawfectmatch.model.Species
 
-class PetDataSource {
+object PetDataSource {
+
+    private var _pets: List<Pet>? = null
 
     fun getPets(): List<Pet> {
-        return listOf(
+        return _pets ?: listOf(
             Pet(
                 id = 1U,
                 name = "Max",
@@ -110,10 +112,12 @@ class PetDataSource {
                 nature = listOf(AnimalNature.ACTIVE, AnimalNature.PLAYFUL),
                 photo = R.drawable.jack_russell
             )
-        )
+        ).apply { _pets = this }
     }
 
-    fun getUrgentPet(): Pet = getPets().random()
+    private var _urgentPet: Pet? = null
+
+    fun getUrgentPet(): Pet = _urgentPet?: getPets().random().apply { _urgentPet = this }
 
     /**
      * TODO
