@@ -6,7 +6,7 @@ import com.asalazar.pawfectmatch.model.Gender
 import com.asalazar.pawfectmatch.model.Pet
 import com.asalazar.pawfectmatch.model.Species
 
-object PetDataSource {
+class PetDataSource {
 
     private var _pets: List<Pet>? = null
 
@@ -20,7 +20,8 @@ object PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 36U,
                 nature = listOf(AnimalNature.LOYAL, AnimalNature.ACTIVE),
-                photo = R.drawable.golden_retriever
+                photo = R.drawable.golden_retriever,
+                isSterilized = true
             ),
             Pet(
                 id = 2U,
@@ -30,7 +31,8 @@ object PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 2U,
                 nature = listOf(AnimalNature.PLAYFUL, AnimalNature.SOCIAL),
-                photo = R.drawable.persian_cat
+                photo = R.drawable.persian_cat,
+                isSterilized = true
             ),
             Pet(
                 id = 3U,
@@ -60,7 +62,8 @@ object PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 24U,
                 nature = listOf(AnimalNature.SMART, AnimalNature.ADVENTUROUS),
-                photo = R.drawable.beagle
+                photo = R.drawable.beagle,
+                isSterilized = true
             ),
             Pet(
                 id = 6U,
@@ -80,7 +83,7 @@ object PetDataSource {
                 gender = Gender.MALE,
                 ageInMonths = 18U,
                 nature = listOf(AnimalNature.SOCIAL, AnimalNature.ADVENTUROUS),
-                photo = R.drawable.cockatiel
+                photo = R.drawable.cockatiel,
             ),
             Pet(
                 id = 8U,
@@ -90,7 +93,8 @@ object PetDataSource {
                 gender = Gender.FEMALE,
                 ageInMonths = 48U,
                 nature = listOf(AnimalNature.SMART, AnimalNature.FRIENDLY),
-                photo = R.drawable.poodle
+                photo = R.drawable.poodle,
+                isSterilized = true
             ),
             Pet(
                 id = 9U,
@@ -117,7 +121,7 @@ object PetDataSource {
 
     private var _urgentPet: Pet? = null
 
-    fun getUrgentPet(): Pet = _urgentPet?: getPets().random().apply { _urgentPet = this }
+    fun getUrgentPet(): Pet = _urgentPet ?: getPets().random().apply { _urgentPet = this }
 
     /**
      * TODO

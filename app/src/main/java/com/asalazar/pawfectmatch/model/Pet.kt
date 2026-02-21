@@ -9,7 +9,7 @@ data class Pet(
     val ageInMonths: UInt = 0U,
     val nature: List<AnimalNature>,
     @field:DrawableRes val photo: Int,
-    val isNeutered: Boolean = false,
+    val isSterilized: Boolean = false,
     val species: Species,
     val breed: String
 )

@@ -3,4 +3,13 @@
     <string name="lbl_location">Location</string>
     <string name="tlt_find_your_new_part_one">Find your new</string>
     <string name="tlt_find_your_new_part_two">best friend</string>
+    <string name="title_no_furry_friends_found">No furry friends found</string>
+    <string name="lbl_empty_state">Try adjusting your filters or search for a different breed.</string>
+    <string name="tlt_recently_added">Recently Added</string>
+    <string name="tlt_urgent_pets">Urgent Pets</string>
+    <string name="lbl_urgent">Urgent</string>
+    <string name="lbl_sterilized">Sterilized</string>
+    <string name="lbl_intact">Intact</string>
+    <string name="lbl_all">All</string>
+    <string name="lbl_search_breed_or_name">Search breed or name</string>
 </resources>
